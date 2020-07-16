@@ -5,7 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
                 <div class="card-header">Dashboardi</div>
+=======
+                <div class="card-header">Dashboardasdas</div>
+>>>>>>> e1bd8cc32ffff7533182732b973c717b06805bc5
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,8 +17,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </div>

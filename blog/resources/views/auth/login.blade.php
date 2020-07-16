@@ -15,7 +15,7 @@
                 <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
                    @csrf
                   <div class="form-group">
-                    <label for="email">{{ __('E-Mail Address') }}</label>
+                    <label for="email">{{ __('E-mail Address') }}</label>
                     <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email" tabindex="1" required autofocus>
                     @error('email')
                       <div class="invalid-feedback" role="alert">
@@ -28,12 +28,12 @@
                     <div class="d-block">
                         <label for="password" class="control-label">{{ __('Password') }}</label>
                       <div class="float-right">
-                        <a href="register.php" class="text-small">
+                        <a href="{{route('register')}}" class="text-small">
                           Belum Punya Akun?
                         </a>
                       </div>
                     </div>
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="pass" tabindex="2" autocomplete="current-password" required>
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" tabindex="2" autocomplete="current-password" required>
                     @error('password')
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $message }}</strong>
@@ -60,9 +60,6 @@
                   </div>
                 </form>
               </div>
-            </div>
-            <div class="simple-footer">
-              Copyright &copy; KUR BNI <?php echo date("Y") ?>
             </div>
           </div>
         </div>
