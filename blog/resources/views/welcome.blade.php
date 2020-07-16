@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Lawak {{ date('d-M-Y', time()) }}
+                    AMP {{ date('d-M-Y', time()) }}
                 </div>
 
                 <div class="links">
