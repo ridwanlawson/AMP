@@ -23,11 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $pegawai = Pegawai::all();
-        $absen = Absen::all();
-        $gaji = Gaji::all();
-        $data = Data::all();
 
-        return view('home', compact('pegawai', 'absen', 'gaji', 'data'));
+        return view('home');
     }
 }
