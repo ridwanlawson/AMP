@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Components &rsaquo; Hero &mdash; Stisla</title>
+  <title>@yield('title', 'Login') &mdash; {{ env('APP_NAME') }}</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="{{ asset('assets/modules/bootstrap/css/bootstrap.min.css') }}">
@@ -28,7 +28,7 @@
 <body class="layout-3">
   <div id="app">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="/">{{ env('APP_NAME') }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,9 +37,11 @@
           <li class="nav-item active">
             <a style="color: white" class="nav-link" href="index.php"><b>Home</b></a>
           </li>
-          <li class="nav-item">
-            <a style="color: white" class="nav-link" href="login.php">Login</a>
-          </li>
+           @auth
+              <li class="nav-item">
+                <a href="{{ Auth::logout() }}" style="color: white" class="nav-link" href="login.php">Logout</a>
+              </li>
+            @endif
         </ul>
       </div>
     </nav
@@ -55,7 +57,7 @@
                     <h2>Menu Maniskum</h2>
                     <p class="lead">Anda Berhasil Masuk ke Dalam Sistem Pilih Menu yang anda inginkan.</p>
                     <div class="mt-4">
-                      <a href="/dashboard" class="form-control btn btn-outline-black btn-lg btn-icon icon-left"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+                      <a href=" {{Route('master')}} " class="form-control btn btn-outline-black btn-lg btn-icon icon-left"><i class="fas fa-sign-in-alt"></i> Masuk</a>
                     </div>
                   </div>
                 </div>
