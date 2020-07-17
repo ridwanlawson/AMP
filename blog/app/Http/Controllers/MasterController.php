@@ -13,9 +13,11 @@ class MasterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    
     public function index()
     {
-        return view('menu.master.index');
+        return view('app.master.index');
     }
 
     /**
