@@ -8,6 +8,7 @@
   <ul class="sidebar-menu">
    
     <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fa fa-envelope-open" aria-hidden="true"></i> <span>Informasi Surat Masuk</span></a></li>
+    
     <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fa fa-paper-plane" aria-hidden="true"></i> <span>Informasi Surat Keluar</span></a></li>
     <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fa fa-info" aria-hidden="true"></i> <span>Informasi Masuk Follow Up Disposisi</span></a></li>
     <li class="{{ request()->is('table') ? 'active' : '' }}"><a href="{{ url('table') }}"><i class="fa fa-sticky-note" aria-hidden="true"></i> <span>Informasi Pengelolaan Katalog</span></a></li>
