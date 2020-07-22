@@ -57,7 +57,7 @@
                     <h2>Menu Maniskum</h2>
                     <p class="lead">Anda Berhasil Masuk ke Dalam Sistem Pilih Menu yang anda inginkan.</p>
                     <div class="mt-4">
-                      <a href=" {{Route('master')}} " class="form-control btn btn-outline-black btn-lg btn-icon icon-left"><i class="fas fa-sign-in-alt"></i> Masuk</a>
+                      <a href=" {{Route('admin.users.index')}} " class="form-control btn btn-outline-black btn-lg btn-icon icon-left"><i class="fas fa-sign-in-alt"></i> Masuk</a>
                     </div>
                   </div>
                 </div>

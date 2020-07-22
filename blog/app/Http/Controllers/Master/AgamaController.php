@@ -1,23 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Master;
 
-use App\Master;
+use App\Agama;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-
-class MasterController extends Controller
+class AgamaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    
     public function index()
     {
-        return view('app.master.index');
+        //
     }
 
     /**
@@ -44,10 +42,10 @@ class MasterController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Master  $master
+     * @param  \App\Agama  $agama
      * @return \Illuminate\Http\Response
      */
-    public function show(Master $master)
+    public function show(Agama $agama)
     {
         //
     }
@@ -55,10 +53,10 @@ class MasterController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Master  $master
+     * @param  \App\Agama  $agama
      * @return \Illuminate\Http\Response
      */
-    public function edit(Master $master)
+    public function edit(Agama $agama)
     {
         //
     }
@@ -67,10 +65,10 @@ class MasterController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Master  $master
+     * @param  \App\Agama  $agama
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Master $master)
+    public function update(Request $request, Agama $agama)
     {
         //
     }
@@ -78,10 +76,10 @@ class MasterController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Master  $master
+     * @param  \App\Agama  $agama
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Master $master)
+    public function destroy(Agama $agama)
     {
         //
     }

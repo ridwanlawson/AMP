@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/master', 'MasterController@index')->name('master');
-
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
+	Route::resource('/users', 'UserController', ['except' => ['show', 'create', 'store']]);
+
+
+});
